@@ -730,7 +730,7 @@ Finally, initialize the Gallery with an onslide callback option, to set the elem
 
 ```js
 blueimp.Gallery(
-    document.getElementById('links'),
+    document.getElementById('links').childNodes,
     {
         onslide: function (index, slide) {
             var text = this.list[index].getAttribute('data-description'),
